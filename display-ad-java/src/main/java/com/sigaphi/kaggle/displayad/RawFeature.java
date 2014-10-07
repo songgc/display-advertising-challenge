@@ -95,9 +95,9 @@ public class RawFeature {
 		return catColsEx.stream()
 				.filter(col -> set.contains(col))
 				.collect(Collectors.toMap(Function.identity(),
-										  col -> this.getField(col, NA),
-										  (x, y) -> y,
-										  LinkedHashMap<String, String>::new));
+					col -> this.getField(col, NA),
+					(x, y) -> y,
+					LinkedHashMap<String, String>::new));
 	}
 	
 	public Map<String, Double> getNumFields(Set<String> colSet) {
@@ -110,9 +110,9 @@ public class RawFeature {
 		return numCols.stream()
 				.filter(col -> set.contains(col))
 				.collect(Collectors.toMap(Function.identity(),
-										  col -> this.getNumField(col),
-										  (x, y) -> y,
-										  LinkedHashMap<String, Double>::new));
+					col -> this.getNumField(col),
+					(x, y) -> y,
+					LinkedHashMap<String, Double>::new));
 	}
 	
 	public String getSync() {

@@ -53,17 +53,17 @@ public class FeaturesToVw {
 		featureGroupD = new HashSet<String>(Arrays.asList("C6", "C14", "C17", "C20", "C22", "C25", "C9", "C23"));
 		Set<String> catFeatures = new HashSet<String>(RawFeature.catCols);
 		featureGroupG = catFeatures.stream()
-									.filter(e -> !featureGroupA.contains(e))
-									.filter(e -> !featureGroupB.contains(e))
-									.filter(e -> !featureGroupC.contains(e))
-									.filter(e -> !featureGroupD.contains(e))
-									.collect(Collectors.toSet());
+						.filter(e -> !featureGroupA.contains(e))
+						.filter(e -> !featureGroupB.contains(e))
+						.filter(e -> !featureGroupC.contains(e))
+						.filter(e -> !featureGroupD.contains(e))
+						.collect(Collectors.toSet());
 		
 		featureGroupP = new HashSet<String>(Arrays.asList("I4", "I8", "I13"));
 		Set<String> numFeatures = new HashSet<String>(RawFeature.numCols);
 		featureGroupN = numFeatures.stream()
-									.filter(e -> !featureGroupP.contains(e))
-									.collect(Collectors.toSet());
+						.filter(e -> !featureGroupP.contains(e))
+						.collect(Collectors.toSet());
 		
 		numCaps.put("I1", 1090d);
 		numCaps.put("I2", 22000d);
