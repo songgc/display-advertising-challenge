@@ -9,7 +9,7 @@ Since the data are highly sparse, the basic methodology is to use logistic regre
 
 Dependencies and requirements
 -----------------------------
-Please note that the code was written for my personal learning and practice in new features of Java 8 and Python 3.4 in Ubuntu 14.04, the code cannot be run in early versions of these two languages or other OSs. Compatibility is not a metric here.
+Please note that the code was written for my personal learning and practice in new features of Java 8 and Python 3.4 in Ubuntu 14.04. The code cannot be run in early versions of these two languages or other OSs. Compatibility is not considered here.
 
 * Java 8
 * Python 3.4
@@ -25,18 +25,18 @@ Please note that the code was written for my personal learning and practice in n
 
 How to run
 ----------
-1. Copy train and test data file (train.csv, test.csv) to data folder
-2. Compile the Java code by
+- Copy train and test data file (train.csv, test.csv) to data folder
+- Compile the Java code by
 ```
 $ cd display-ad-java
 $ mvn package # or mvn install
 ```
-3. Make sure a redis instance running at localhost:6379
-4. Set the path of binary vw (VW_BIN) in run.sh, such as 
+- Make sure a redis instance running at localhost:6379
+- Set the path of binary vw (VW_BIN) in run.sh, such as 
 ```
 export VW_BIN=/path/to/vw/binary
 ```
-5. 
+- Finally, 
 ```
 $ cd work
 $ ../run.sh
