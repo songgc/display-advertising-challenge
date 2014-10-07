@@ -17,8 +17,8 @@ import redis.clients.jedis.Jedis;
 import com.google.common.base.Joiner;
 
 /**
- * @author Guocong Song
  * Convert RawFeature to vw format
+ * @author Guocong Song
  */
 public class FeaturesToVw {
 	public static final Joiner JOIN_KV = Joiner.on(":");

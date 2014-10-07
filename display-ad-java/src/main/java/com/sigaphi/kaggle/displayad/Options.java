@@ -1,8 +1,8 @@
 package com.sigaphi.kaggle.displayad;
 
 /**
- * @author Guocong Song
  * Feature options
+ * @author Guocong Song
  */
 public enum Options {
 	CAT_BASIC,
